@@ -1,0 +1,7 @@
+<script type="text/javascript">
+	const update = new EventSource('/update');
+	update.onmessage = (e) => { 
+		console.log(e.data)
+		window.location.reload(true)
+	}
+</script>
